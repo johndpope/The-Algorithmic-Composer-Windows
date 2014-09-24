@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="The_Algorithmic_Composer" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons\;src\;addons\ofxUI\src\;addons\ofxXmlSettings\src\;addons\ofxXmlSettings\libs\;" />
+		<Build>
+			<Target title="release">
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release" />
+				<Option external_deps="../../of_v0.8.4_win_cb_release/libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../../of_v0.8.4_win_cb_release/addons/midifile/include" />
+					<Add directory="../../of_v0.8.4_win_cb_release/addons/midiFileReader" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="../../of_v0.8.4_win_cb_release/libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib" />
+				</Linker>
+			</Target>
+			<Target title="debug">
+				<Option output="bin/$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../../of_v0.8.4_win_cb_release/libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="../../of_v0.8.4_win_cb_release/libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wno-multichar" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/glu/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/freetype/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/freetype/include/freetype2" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/FreeImage/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/quicktime/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/rtAudio/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/fmodex/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/videoInput/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/glew/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/glut/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/glfw/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/3d" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/app" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/communication" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/events" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/gl" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/graphics" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/math" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/sound" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/types" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/utils" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/openFrameworks/video" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/poco/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/tess2/include" />
+			<Add directory="../../of_v0.8.4_win_cb_release/libs/cairo/include/cairo" />
+			<Add directory="../../of_v0.8.4_win_cb_release/addons/ofxXmlSettings/libs" />
+			<Add directory="../../of_v0.8.4_win_cb_release/addons/ofxXmlSettings/src" />
+			<Add directory="../../of_v0.8.4_win_cb_release/addons/ofxUI/libs" />
+			<Add directory="../../of_v0.8.4_win_cb_release/addons/ofxUI/src" />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\FreeImage\lib\win_cb\FreeImage.lib" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\rtAudio\lib\win_cb\librtaudio.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\quicktime\lib\win_cb\qtmlClient.lib" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\cairo\lib\win_cb\libcairo.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\cairo\lib\win_cb\libpixman-1.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\freetype\lib\win_cb\libfreetype.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\glut\lib\win_cb\libglut.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\glfw\lib\win_cb\libglfw3.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\videoInput\lib\win_cb\videoInputLib.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\fmodex\lib\win_cb\libfmodex.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\glew\lib\win_cb\glew32s.lib" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\glu\lib\win_cb\glu32.lib" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\poco\lib\win_cb\libPocoNetSSL.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\poco\lib\win_cb\libPocoCrypto.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\poco\lib\win_cb\libPocoNet.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\poco\lib\win_cb\libPocoUtil.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\poco\lib\win_cb\libPocoXML.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\poco\lib\win_cb\libPocoFoundation.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\openssl\lib\win_cb\libssl.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\openssl\lib\win_cb\libcrypto.a" />
+			<Add library="..\..\of_v0.8.4_win_cb_release\libs\tess2\lib\win_cb\libtess2.a" />
+			<Add library="opengl32" />
+			<Add library="gdi32" />
+			<Add library="msimg32" />
+			<Add library="glu32" />
+			<Add library="dsound" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="strmbase" />
+			<Add library="strmiids" />
+			<Add library="z" />
+			<Add library="uuid" />
+			<Add library="ole32" />
+			<Add library="oleaut32" />
+			<Add library="setupapi" />
+			<Add library="wsock32" />
+			<Add library="ws2_32" />
+			<Add library="Iphlpapi" />
+			<Add library="Comdlg32" />
+		</Linker>
+		<ExtraCommands>
+			<Add after='xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\of_v0.8.4_win_cb_release\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;' />
+			<Add after='cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;' />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midiFileReader/MIDIComposition.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midiFileReader/MIDIEvent.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midiFileReader/MIDIFileReader.cpp" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midiFileReader/MIDIFileReader.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/Array.cpp" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/Array.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/FileIO.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/MidiFile.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/Options.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/Options_private.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/SigCollection.cpp" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/SigCollection.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/include/sigConfiguration.h" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/src/FileIO.cpp" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/src/MidiFile.cpp" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/src/Options.cpp" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/midifile/src/Options_private.cpp" />
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUI.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUI2DGraph.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUI2DGraph.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUI2DPad.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUI2DPad.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIBaseDraws.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIBaseDraws.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIBiLabelSlider.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIBiLabelSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIButton.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUICanvas.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUICanvas.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUICircleSlider.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUICircleSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIDefines.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIDragableLabelButton.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIDragableLabelButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIDropDownList.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIDropDownList.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIEventArgs.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIEventArgs.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIFPS.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIFPS.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIFPSSlider.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIFPSSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImage.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImage.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImageButton.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImageButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImageSampler.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImageSampler.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImageSlider.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImageSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImageToggle.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIImageToggle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUILabel.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUILabel.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUILabelButton.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUILabelButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUILabelToggle.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUILabelToggle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIMinimalSlider.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIMinimalSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIMovingGraph.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIMovingGraph.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIMultiImageButton.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIMultiImageButton.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIMultiImageToggle.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIMultiImageToggle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUINumberDialer.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUINumberDialer.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIOFWrapper.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIRadio.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIRadio.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIRangeSlider.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIRangeSlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIRectangle.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIRectangle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIRotarySlider.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIRotarySlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIScrollableCanvas.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIScrollableCanvas.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISlider.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISlider.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISortableList.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISortableList.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISpacer.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISpacer.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISpectrum.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISpectrum.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISuperCanvas.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUISuperCanvas.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUITabBar.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUITabBar.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUITextArea.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUITextArea.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUITextInput.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUITextInput.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIToggle.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIToggle.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIToggleMatrix.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIToggleMatrix.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIUtils.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIValuePlotter.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIValuePlotter.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIWaveform.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIWaveform.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIWidget.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIWidget.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIWidgetWithLabel.cpp">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIWidgetWithLabel.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIWidgets.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxUI/src/ofxUIWrapper.h">
+			<Option virtualFolder="addons/ofxUI/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxXmlSettings/libs/tinyxml.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxXmlSettings/libs/tinyxml.h">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxXmlSettings/libs/tinyxmlerror.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxXmlSettings/libs/tinyxmlparser.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxXmlSettings/src/ofxXmlSettings.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/src" />
+		</Unit>
+		<Unit filename="../../of_v0.8.4_win_cb_release/addons/ofxXmlSettings/src/ofxXmlSettings.h">
+			<Option virtualFolder="addons/ofxXmlSettings/src" />
+		</Unit>
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/App.cpp" />
+		<Unit filename="src/App.h" />
+		<Unit filename="src/BetaDistribution.cpp" />
+		<Unit filename="src/BetaDistribution.h" />
+		<Unit filename="src/CauchyDistribution.cpp" />
+		<Unit filename="src/CauchyDistribution.h" />
+		<Unit filename="src/ChaoticComposer.cpp" />
+		<Unit filename="src/ChaoticComposer.h" />
+		<Unit filename="src/Composer.cpp" />
+		<Unit filename="src/Composer.h" />
+		<Unit filename="src/Distribution.cpp" />
+		<Unit filename="src/Distribution.h" />
+		<Unit filename="src/ExponentialDistribution.cpp" />
+		<Unit filename="src/ExponentialDistribution.h" />
+		<Unit filename="src/Figure.cpp" />
+		<Unit filename="src/Figure.h" />
+		<Unit filename="src/FractionalNoiseComposer.cpp" />
+		<Unit filename="src/FractionalNoiseComposer.h" />
+		<Unit filename="src/GaussianDistribution.cpp" />
+		<Unit filename="src/GaussianDistribution.h" />
+		<Unit filename="src/IndependentStochasticComposer.cpp" />
+		<Unit filename="src/IndependentStochasticComposer.h" />
+		<Unit filename="src/LinearDistribution.cpp" />
+		<Unit filename="src/LinearDistribution.h" />
+		<Unit filename="src/MarkovChainsComposer.cpp" />
+		<Unit filename="src/MarkovChainsComposer.h" />
+		<Unit filename="src/Midi.cpp" />
+		<Unit filename="src/Midi.h" />
+		<Unit filename="src/MotivicDevelopmentComposer.cpp" />
+		<Unit filename="src/MotivicDevelopmentComposer.h" />
+		<Unit filename="src/MotivicDevelopmentMethods.cpp" />
+		<Unit filename="src/MotivicDevelopmentMethods.h" />
+		<Unit filename="src/MusicVisualizer.cpp" />
+		<Unit filename="src/MusicVisualizer.h" />
+		<Unit filename="src/Note.cpp" />
+		<Unit filename="src/Note.h" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Player.h" />
+		<Unit filename="src/PoissonDistribution.cpp" />
+		<Unit filename="src/PoissonDistribution.h" />
+		<Unit filename="src/RandomWalkComposer.cpp" />
+		<Unit filename="src/RandomWalkComposer.h" />
+		<Unit filename="src/Randomize.cpp" />
+		<Unit filename="src/Randomize.h" />
+		<Unit filename="src/Scales.h" />
+		<Unit filename="src/SerialismMethods.cpp" />
+		<Unit filename="src/SerialismMethods.h" />
+		<Unit filename="src/SerialistComposer.cpp" />
+		<Unit filename="src/SerialistComposer.h" />
+		<Unit filename="src/Silence.cpp" />
+		<Unit filename="src/Silence.h" />
+		<Unit filename="src/TriangularDistribution.cpp" />
+		<Unit filename="src/TriangularDistribution.h" />
+		<Unit filename="src/UniformDistribution.cpp" />
+		<Unit filename="src/UniformDistribution.h" />
+		<Unit filename="src/Utils.h" />
+		<Unit filename="src/WeibullDistribution.cpp" />
+		<Unit filename="src/WeibullDistribution.h" />
+		<Unit filename="src/colorednoise.cpp" />
+		<Unit filename="src/colorednoise.h" />
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/ofApp.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/ofApp.h">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
